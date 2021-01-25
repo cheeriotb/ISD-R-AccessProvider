@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.github.cheeriotb.isdrap">
+
+    <uses-permission
+        android:name="android.permission.MODIFY_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ISDRAccessProvider"
+        tools:ignore="AllowBackup">
+        <provider
+            android:name=".IsdrAccessProvider"
+            android:authorities="com.github.cheeriotb.isdrap.provider"
+            android:exported="true"
+            tools:ignore="ExportedContentProvider">
+        </provider>
+        <service
+            android:name=".DummyEuiccServiceImpl"
+            android:directBootAware="true"
+            android:permission="android.permission.BIND_EUICC_SERVICE">
+            <intent-filter android:priority="100">
+                <action android:name="android.service.euicc.EuiccService" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

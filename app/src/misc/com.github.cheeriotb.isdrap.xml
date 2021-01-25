@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2021 Cheerio <cheerio.the.bear@gmail.com>
+
+    This program is free software; you can redistribute it and/or modify it
+    under the terms of the MIT license.
+    See the license information described in LICENSE file.
+-->
+<permissions>
+    <privapp-permissions package="com.github.cheeriotb.isdrap">
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS"/>
+    </privapp-permissions>
+</permissions>
+
