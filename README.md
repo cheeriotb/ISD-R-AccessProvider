@@ -31,6 +31,8 @@ It is a bit hard to interpret ProfileInfoListResponse responded from ISD-R manua
 ||*notificationConfigurationInfo*|*profileManagementOperation*|notificationInstall (0)|
 |||*notificationAddress*|SM-V4-033-A-GTM.PR.GO-ESIM.COM|
 
+The content provider and eSIM are not always ready to receive new request. If any kind of temporary failure is indicated in the responded status word, please try to send the same ES10x command several times at a certain interval.
+
 # Dependency
 
 It is necessary to push an APK and a permission file to the system partition, so your eSIM-capable Android phone must be rooted. And also, any kind of LPA implementation should not be in the system because only one application can have a right to talk with ISD-R in the system. This application should have the right. In order to satisfy that, it is the easiest way to flash a recent version of Google/AOSP user-debug binary by using Android Flash Tool. See the next section.
