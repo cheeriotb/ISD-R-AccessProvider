@@ -33,13 +33,13 @@ It is a bit hard to interpret ProfileInfoListResponse responded from ISD-R manua
 
 The content provider and eSIM are not always ready to receive new request. If any kind of temporary failure is indicated in the responded status word, please try to send the same ES10x command several times at a certain interval.
 
-# Dependency
+## Dependency
 
 It is necessary to push an APK and a permission file to the system partition, so your eSIM-capable Android phone must be rooted. And also, any kind of LPA implementation should not be in the system because only one application can have a right to talk with ISD-R in the system. This application should have the right. In order to satisfy that, it is the easiest way to flash a recent version of Google/AOSP user-debug binary by using Android Flash Tool. See the next section.
 
 Note that this application is well adapted to Google Pixel 4 that I have. My assumption is that we can use this for newer products like Google Pixel 5 without any code change, but not tested.
 
-# Setup
+## Setup
 
 First, you have to prepare a rooted Android device. If your phone is a Google's phone product, please try Android Flash Tool (https://flash.android.com/) for flashing a recent version of Google/AOSP user-debug build.
 
@@ -55,15 +55,15 @@ $ adb push com.github.cheeriotb.isdrap.xml /system/etc/permissions
 $ adb reboot
 ```
 
-# Licence
+## Licence
 
 This software is released under the MIT License, see LICENSE.
 
-# Author
+## Author
 
 Cheerio (cheerio.the.bear@gmail.com)
 
-# References
+## References
 
 * GSMA
     * SGP.22 v2.2.2
