@@ -1,7 +1,7 @@
 # ISD-R Access Provider
 ## Introduction
 
-You just want to study how eSIM works with consumer-model described GSMA SGP.21 and SGP.22, but cannot find a good way to get a plug-in (4FF/nano) eSIM card, right? I also sent queries to some eSIM service providres and got the same responses that such a product is not available right now (maybe in the future also). Though I wanted to prepare a development/study environment like the following figure 1, I gave it up for now. Then, I came up with an easy, not cool but possible compromized solution in the figure 2 below.
+You just want to study how eSIM works with consumer-model described GSMA SGP.21 and SGP.22, but cannot find a good way to get a plug-in (4FF/nano) eSIM card, right? I also sent queries to some eSIM service providres and got the same responses that such a product is not available right now (maybe in the future also). Though I wanted to prepare a development/study environment like the following figure 1, I gave it up for now. Then, I came up with an easy, not cool but possible compromise solution in the figure 2 below.
 
 <img src="https://user-images.githubusercontent.com/44401044/105844907-4c93ba00-601d-11eb-8b8d-b81e9e95e14c.png" width="800">
 
